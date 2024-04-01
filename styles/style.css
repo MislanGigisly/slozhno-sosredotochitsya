@@ -3,3 +3,27 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  background-image: url(/images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header__decoration__element::before {
+  content: 'REC';
+  color: #FF0070;
+  position: absolute;
+  top: 10px;
+  right: 38px;
+}
+
+.header__decoration__element::after {
+  content: '';
+  position: absolute;
+
+
+  color: #FF0070;
+}
