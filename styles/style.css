@@ -5,25 +5,44 @@
 }
 
 .header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  min-inline-size: 375px;
+  min-block-size: 668px;
   background-image: url(/images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: cover;
   background-position: center;
   position: relative;
+  padding: 10px;
 }
 
 .header__decoration__element::before {
   content: 'REC';
-  color: #FF0070;
+  font-family: var(--general-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--decoration-color);
   position: absolute;
   top: 10px;
   right: 38px;
+  
 }
 
 .header__decoration__element::after {
   content: '';
   position: absolute;
+  display: block;
+  height: 12px;
+  width: 12px; 
+  border-radius: 10px;
+  background-color: var(--decoration-color);
+  top: 18px;
+  right: 19px;
+  filter: blur(2px);
+}
 
-
-  color: #FF0070;
+.general__title__text {
+  text-align: ;
 }

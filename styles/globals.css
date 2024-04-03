@@ -40,3 +40,41 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.paragraf__text {
+  color: var(--general-color);
+  font-family: var(--general-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+
+.general__title__text {
+  color: var(--general-title-color);
+  font-family: var(--general-font);
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 82.5%;
+  letter-spacing: 0%;
+  text-shadow: 4px 4px 0 var(--decoration-color);
+}
+
+.title__text {
+  color: var(--title-color);
+  font-family: var(--general-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  background-color: var(--decoration-color);
+}
+
+article__title__text {
+  color:  var(--decoration-color);
+  font-family: var(--general-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
