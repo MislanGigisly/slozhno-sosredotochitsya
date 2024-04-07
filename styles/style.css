@@ -2,6 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .header {
@@ -114,15 +117,83 @@ justify-content: end;
 .header__theme-menu-button:focus {
 outline: none;
 }
+
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--decoration-color);
   margin-bottom: -1px;
 }
-
 
 .header__discription {
  
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.title__decoration {
+  background-color: var(--decoration-color);
+  color: var(--title-color);
+}
+
+.main {
+  padding: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.paragraf__text:last-child {
+  margin-bottom: 0;
+}
+
+.article__title {
+  margin-bottom: 20px;
+}
+
+.article__subtitle {
+  margin-bottom: 10px;
+}
+
+.regular__mod {
+  font-weight: 400;
+}
+
+.paragraf__text {
+  margin-bottom: 20px;
+}
+
+.link__in__text {
+  text-shadow: 2px 2px 0 var(--decoration-color);
+  text-decoration: none;
+}
+.link__in__text:hover {
+  border-bottom: 1px solid var(--general-color) ;
+}
+
+.link__in__text:focus {
+  outline: none;
+}
+
+.link__in__text:focus-visible {
+  outline: 1px solid var(--general-color);
+}
+
+.list__images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-content: space-around;
+}
+
+.visual__example {
+  width: 355px;
+}
+
+
+.footer {
+  position: relative;
+  height: 668px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -63,20 +63,13 @@ a {
 }
 
 .title__text {
-  color: var(--title-color);
+  color: var(--decoration-color);
   font-family: var(--general-font);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   letter-spacing: 0%;
-  background-color: var(--decoration-color);
 }
 
-article__title__text {
-  color:  var(--decoration-color);
-  font-family: var(--general-font);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
-  letter-spacing: 0%;
-}
+
+
