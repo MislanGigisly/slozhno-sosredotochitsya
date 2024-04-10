@@ -8,6 +8,8 @@
   --decoration-color: #FF0070;
   --decoration-color-alpha: rgb(255, 0, 112, .4); 
   --general-title-color: #DB00FF;
+  --rec-color: #FF0070;
   --general-font: "IBM Plex Mono", sans-serif;
   --background-color-main: #000028;
+  --background-image: url(/images/cover-image-dark.png);
 }
