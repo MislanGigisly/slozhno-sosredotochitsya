@@ -396,6 +396,7 @@
   
   .article__second > .article__title {
     grid-area: title;
+    width: 30vw;
   }
 
   .article__second > .title__text:nth-child(2) {
@@ -430,9 +431,7 @@
     grid-template-columns: 1fr 1.945fr;
   }
 
-  .article__second > .article__title {
-    width: 30vw;
-  }
+ 
 
   .footer {
     height: 75vw;
