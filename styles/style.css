@@ -31,9 +31,16 @@
 @media (width >767px) {
   .header {
     padding: 20px 20px 20px 0;
+    min-inline-size: 768px;
+    min-block-size: 1024px;
+    background-position: none;
+  }
+}
+
+@media (width >1023px) {
+  .header {
     min-inline-size: 1024px;
     min-block-size: 768px;
-    background-position: none;
   }
 }
 
