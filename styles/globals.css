@@ -63,11 +63,11 @@ a {
 }
 
 @media (width > 767px) {
+  
   .general__title__text {
-    font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
-
 
 .title__text {
   color: var(--decoration-color);
@@ -77,6 +77,3 @@ a {
   line-height: 23.4px;
   letter-spacing: 0%;
 }
-
-
-

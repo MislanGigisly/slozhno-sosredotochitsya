@@ -4,24 +4,23 @@
   переключая тему
 */
 
-
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-:root {
-  --title-color: #353430;
-  --general-color: #353430;
-  --decoration-color: #FF8DCB;
-  --decoration-color-alpha: rgba(50, 49, 45, 0.4); 
-  --general-title-color: #FFC2E6;
-  --background-color-main: #FFF1F7;
-  --rec-color: #353430;
-  --background-image: url(/images/cover-image-light.png);    
+  :root {
+    --title-color: #353430;
+    --general-color: #353430;
+    --decoration-color: #ff8dcb;
+    --decoration-color-alpha: rgba(50, 49, 45, 0.4);
+    --general-title-color: #ffc2e6;
+    --background-color-main: #fff1f7;
+    --rec-color: #353430;
+    --background-image: url(/images/cover-image-light.png);
   }
   .header__decoration__element::before {
     display: none;
   }
-  .header__decoration__element::after{
+  .header__decoration__element::after {
     display: none;
   }
   .title__text {
@@ -29,7 +28,7 @@
   }
 }
 
-/* Остальные стили */ 
+/* Остальные стили */
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -37,23 +36,22 @@
   */
   --title-color: #353430;
   --general-color: #353430;
-  --decoration-color: #FF8DCB;
-  --decoration-color-alpha: rgba(50, 49, 45, 0.4); 
-  --general-title-color: #FFC2E6;
-  --background-color-main: #FFF1F7;
+  --decoration-color: #ff8dcb;
+  --decoration-color-alpha: rgba(50, 49, 45, 0.4);
+  --general-title-color: #ffc2e6;
+  --background-color-main: #fff1f7;
   --rec-color: #353430;
   --background-image: url(/images/cover-image-light.png);
 
+  .header__decoration__element::before {
+    display: none;
+  }
 
-.header__decoration__element::before {
-  display: none;
-}
+  .header__decoration__element::after {
+    display: none;
+  }
 
-.header__decoration__element::after{
-  display: none; 
-}
-
-.title__text {
-  color: var(--title-color);
-}
+  .title__text {
+    color: var(--title-color);
+  }
 }

@@ -5,10 +5,10 @@
 */
 :root.theme-dark {
   --title-color: #000028;
-  --general-color: #F1B2CE;
-  --decoration-color: #FF0070;
-  --decoration-color-alpha: rgb(255, 0, 112, .4); 
-  --general-title-color: #DB00FF;
+  --general-color: #f1b2ce;
+  --decoration-color: #ff0070;
+  --decoration-color-alpha: rgb(255, 0, 112, 0.4);
+  --general-title-color: #db00ff;
   --background-color-main: #000028;
   --background-image: url(/images/cover-image-dark.png);
 }
