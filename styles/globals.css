@@ -62,6 +62,13 @@ a {
   text-shadow: 4px 4px 0 var(--decoration-color);
 }
 
+@media (width > 767px) {
+  .general__title__text {
+    font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+
 .title__text {
   color: var(--decoration-color);
   font-family: var(--general-font);
