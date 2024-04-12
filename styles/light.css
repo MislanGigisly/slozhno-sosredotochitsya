@@ -15,7 +15,7 @@
     --general-title-color: #ffc2e6;
     --background-color-main: #fff1f7;
     --rec-color: #353430;
-    --background-image: url(/images/cover-image-light.png);
+    --background-image: url(../images/cover-image-light.png);
   }
   .header__decoration__element::before {
     display: none;

@@ -10,7 +10,7 @@
   --decoration-color-alpha: rgb(255, 0, 112, 0.4);
   --general-title-color: #db00ff;
   --background-color-main: #000028;
-  --background-image: url(/images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
 }
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.

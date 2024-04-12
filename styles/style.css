@@ -5,7 +5,11 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-color: var(--background-color-main);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @media (width >767px) {
@@ -20,10 +24,6 @@
   grid-template-rows: 1fr min-content 1fr;
   min-inline-size: 375px;
   min-block-size: 668px;
-  background-image: var(--background-image);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
   padding: 10px;
 }

@@ -15,7 +15,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserlist": "^1.0.1",
     "prettier": "^3.2.5",
     "stylelint": "^16.3.1"
-  }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
