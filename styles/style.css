@@ -140,22 +140,17 @@
   margin-top: -1px;
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 14px;
   justify-content: center;
 }
 
-@media (width > 767px) {
-  .header__theme-menu-list {
-    margin-top: 0;
-    gap: 17px;
-  }
-}
 
 @media (width > 1023px) {
 
   .header__theme-menu-list {
     flex-direction: row;
     gap: 11px;
+    margin-top: -2px;
   }
 }
 
@@ -174,7 +169,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  padding: 0 13px 0;
+  padding: 2px 13px;
 }
 
 @media (hover: hover) {
@@ -185,13 +180,7 @@
   }
 }
 
-@media (pointer: coarse) {
 
-  .header__theme-menu-button {
-    inline-size: 44px;
-    block-size: 44px;
-  }
-}
 
 .header__theme-menu-button:focus {
   outline: none;
@@ -282,13 +271,7 @@
   }
 }
 
-@media (pointer: coarse) {
 
-  .link__in__text {
-    inline-size: 44px;
-    block-size: 44px;
-  }
-}
 
 .link__in__text:focus {
   outline: none;
