@@ -418,16 +418,16 @@
     width: 30vw;
   }
 
-  .article__second .content__section:nth-child(2){
+  .article__second .content__section:nth-child(2) {
     grid-area: content-1;
    
   }
 
-  .article__second .content__section:nth-child(3){
+  .article__second .content__section:nth-child(3) {
     grid-area: content-2;
   }
 
-  .article__second .content__section:nth-child(4){
+  .article__second .content__section:nth-child(4) {
     grid-area: content-3;
   }
 
