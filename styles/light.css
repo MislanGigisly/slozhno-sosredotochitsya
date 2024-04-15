@@ -10,6 +10,7 @@
   :root {
     --title-color: #353430;
     --general-color: #353430;
+    --focus-color: #32312D;
     --decoration-color: #ff8dcb;
     --decoration-color-alpha: rgba(50, 49, 45, 0.4);
     --general-title-color: #ffc2e6;
@@ -36,6 +37,7 @@
   */
   --title-color: #353430;
   --general-color: #353430;
+  --focus-color: #32312D;
   --decoration-color: #ff8dcb;
   --decoration-color-alpha: rgba(50, 49, 45, 0.4);
   --general-title-color: #ffc2e6;

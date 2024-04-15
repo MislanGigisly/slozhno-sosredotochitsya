@@ -6,9 +6,11 @@
 :root.theme-dark {
   --title-color: #000028;
   --general-color: #f1b2ce;
+  --focus-color: #ff0070;
   --decoration-color: #ff0070;
   --decoration-color-alpha: rgb(255, 0, 112, 0.4);
   --general-title-color: #db00ff;
+  --rec-color: #ff0070;
   --background-color-main: #000028;
   --background-image: url(../images/cover-image-dark.png);
 }
@@ -17,5 +19,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: var(--background-color-main);
+  --title-color: #000028;
+  --general-color: #f1b2ce;
+  --focus-color: #ff0070;
+  --decoration-color: #ff0070;
+  --decoration-color-alpha: rgb(255, 0, 112, 0.4);
+  --general-title-color: #db00ff;
+  --rec-color: #ff0070;
+  --background-color-main: #000028;
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: var(--background-color-main);
 }

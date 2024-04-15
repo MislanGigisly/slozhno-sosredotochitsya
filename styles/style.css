@@ -19,11 +19,12 @@
   }
 }
 
+
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   min-inline-size: 375px;
-  min-block-size: 668px;
+  min-block-size: 100vh;
   position: relative;
   padding: 10px;
 }
@@ -33,7 +34,6 @@
   .header {
     padding: 20px 20px 20px 0;
     min-inline-size: 768px;
-    min-block-size: 1024px;
     background-position: none;
   }
 }
@@ -41,8 +41,8 @@
 @media (width >1023px) {
 
   .header {
+    padding: 23px 20px 20px 0;
     min-inline-size: 1024px;
-    min-block-size: 768px;
   }
 }
 
@@ -131,22 +131,32 @@
 @media (width > 1023px) {
 
   .header__theme-menu {
+    margin-left: 19px;
     align-items: start;
     justify-content: center;
   }
 }
 
 .header__theme-menu-list {
+  margin-top: -1px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 17px;
   justify-content: center;
+}
+
+@media (width > 767px) {
+  .header__theme-menu-list {
+    margin-top: 0;
+    gap: 17px;
+  }
 }
 
 @media (width > 1023px) {
 
   .header__theme-menu-list {
     flex-direction: row;
+    gap: 11px;
   }
 }
 
@@ -190,7 +200,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--decoration-color);
+  border-bottom: 1px solid var(--focus-color);
   margin-bottom: -1px;
 }
 
@@ -213,6 +223,7 @@
     grid-area: container;
   }
 }
+
 
 .title__decoration {
   background-color: var(--decoration-color);
@@ -240,6 +251,12 @@
 
 .article__title {
   margin-bottom: 20px;
+}
+@media (width > 1023px) {
+
+  .article__title {
+    margin-bottom: 0;
+  }
 }
 
 .article__subtitle {
@@ -283,6 +300,13 @@
   outline: 1px solid var(--general-color);
 }
 
+.content__section {
+  margin-bottom: 20px;
+}
+.content__section:last-child {
+  margin-bottom: 0;
+}
+
 .list__images {
   display: flex;
   flex-direction: column;
@@ -296,7 +320,7 @@
 
 .footer {
   position: relative;
-  height: 179vw;
+  min-block-size: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,6 +330,7 @@
   text-shadow: 2px 2px 0 var(--decoration-color);
 }
 
+
 @media (width >767px) {
 
   .visual__example {
@@ -314,19 +339,13 @@
     object-fit: cover;
   }
 
-  .footer {
-    height: 133.5vw;
-  }
 
   .article__first {
     display: grid;
-    grid-template-columns: 1fr 1.85fr;
-    grid-template-rows: repeat(4, fit-content);
-    grid-auto-flow: column;
-  }
-
-  .article__first .tablet {
-    grid-row: span 4;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(auto, fit-content);
+    grid-auto-flow: row;
+    column-gap: 20px;
   }
 
   .article__second > .article__title {
@@ -335,9 +354,10 @@
 
   .article__third {
     display: grid;
-    grid-template-columns: 1fr 1.85fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(11, fit-content);
     grid-auto-flow: column;
+    column-gap: 20px;
   }
 
   .article__third .tablet {
@@ -385,13 +405,12 @@
   .article__second {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, fit-content);
-    grid-auto-flow: column;
+    grid-template-rows: repeat(auto-fill, fit-content);
+    grid-auto-flow: row;
     grid-template-areas:
       "title title title"
-      "subtitle-1 subtitle-2 subtitle-3"
-      "paragraf-1 paragraf-2 paragraf-3";
-    column-gap: 20px;
+      "content-1 content-2 content-3";
+    gap: 20px;
   }
   
   .article__second > .article__title {
@@ -399,41 +418,29 @@
     width: 30vw;
   }
 
-  .article__second > .title__text:nth-child(2) {
-    grid-area: subtitle-1;
+  .article__second .content__section:nth-child(2){
+    grid-area: content-1;
+   
   }
 
-  .article__second > .title__text:nth-child(4) {
-    grid-area: subtitle-2;
+  .article__second .content__section:nth-child(3){
+    grid-area: content-2;
   }
 
-  .article__second .title__text:nth-child(6) {
-    grid-area: subtitle-3;
-  }
-
-  .article__second > .paragraf__text:nth-child(3) {
-    grid-area: paragraf-1;
-  }
-
-  .article__second > .paragraf__text:nth-child(5) {
-    grid-area: paragraf-2;
-  }
-
-  .article__second > .paragraf__text:nth-child(7) {
-    grid-area: paragraf-3;
+  .article__second .content__section:nth-child(4){
+    grid-area: content-3;
   }
 
   .article__first {
-    grid-template-columns: 1fr 1.945fr;
+    grid-template-columns: 1fr 2.06fr;
   }
 
   .article__third {
-    grid-template-columns: 1fr 1.945fr;
+    grid-template-columns: 1fr 2.05fr;
+  }
+  
+  .article__third .article__title {
+    margin-bottom: 20px;
   }
 
- 
-
-  .footer {
-    height: 75vw;
-  }
 }
