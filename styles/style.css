@@ -34,7 +34,6 @@
   .header {
     padding: 20px 20px 20px 0;
     min-inline-size: 768px;
-    background-position: none;
   }
 }
 
@@ -175,7 +174,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0%;
   padding: 0 13px 0;
 }
 
@@ -187,7 +185,7 @@
   }
 }
 
-@media (pointer: course) {
+@media (pointer: coarse) {
 
   .header__theme-menu-button {
     inline-size: 44px;
@@ -284,7 +282,7 @@
   }
 }
 
-@media (pointer: course) {
+@media (pointer: coarse) {
 
   .link__in__text {
     inline-size: 44px;
@@ -343,9 +341,9 @@
   .article__first {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(auto, fit-content);
     grid-auto-flow: row;
     column-gap: 20px;
+    
   }
 
   .article__second > .article__title {
@@ -355,7 +353,6 @@
   .article__third {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(11, fit-content);
     grid-auto-flow: column;
     column-gap: 20px;
   }
@@ -366,8 +363,6 @@
 
   .list__images {
     display: grid;
-    grid-template-columns: repeat(3, fit-content);
-    grid-template-rows: repeat(3, fit-content);
     grid-template-areas:
       "sunset sunset ice-cream"
       "tape books ice-cream"
@@ -405,7 +400,6 @@
   .article__second {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill, fit-content);
     grid-auto-flow: row;
     grid-template-areas:
       "title title title"
