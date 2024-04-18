@@ -4,7 +4,7 @@
   переключая тему
 */
 
-@media (prefers-color-scheme: light) { 
+@media (prefers-color-scheme: light) {
 
   :root {
     --title-color: #353430;
