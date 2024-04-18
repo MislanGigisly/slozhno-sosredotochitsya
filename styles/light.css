@@ -5,6 +5,7 @@
 */
 
 @media (prefers-color-scheme: light) { 
+
   :root { 
     --title-color: #353430; 
     --general-color: #353430; 
@@ -15,19 +16,19 @@
     --rec-color: #353430; 
     --background-image: url(../images/cover-image-light.png); 
   } 
+
   .header__decoration__element::before { 
     display: none; 
   } 
+
   .header__decoration__element::after { 
     display: none; 
   } 
+
   .title__text { 
     color: var(--title-color); 
   } 
 } 
-
-
-
 
 /* Остальные стили */
 .page.theme_light {
